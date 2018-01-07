@@ -7,5 +7,8 @@ def second_challenge
   }
 
   #code your solution here!
-  groceries.values.flatten
+  array = groceries.collect do |type, item|
+    item
+  end
+  array.flatten
 end
